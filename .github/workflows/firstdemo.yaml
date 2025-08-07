@@ -34,7 +34,7 @@ jobs:
           SONAR_HOST_URL: "https://sonarcloud.io"
         run: |
           mvn sonar:sonar \
-            -Dsonar.projectKey=sonardemo \
+            -Dsonar.projectKey=Sonardemo \
             -Dsonar.organization=payald14 \
             -Dsonar.host.url=$SONAR_HOST_URL \
             -Dsonar.login=$SONAR_TOKEN
