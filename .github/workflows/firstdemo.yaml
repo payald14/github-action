@@ -35,7 +35,7 @@ jobs:
         run: |
           mvn sonar:sonar \
             -Dsonar.projectKey=sonardemo \
-            -Dsonar.organization=vcjain \
+            -Dsonar.organization=payald14 \
             -Dsonar.host.url=$SONAR_HOST_URL \
             -Dsonar.login=$SONAR_TOKEN
 
