@@ -10,5 +10,5 @@ on:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      - nanme:Build
+      - name: Build
         run: echo "Build code"
