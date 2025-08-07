@@ -2,12 +2,16 @@ name: TestDemo
 
 on:
     workflow_dispatch:
+        inputs:
+            is_build:
+                description: 'Do you want to build'
+                required: true
+                default: false
 
 jobs:
     build:
-        env:
-          MY_ENV_VAR : "PAYAL"
-        if: MY_ENV_VAR== 'DATE'
+        
+        if: ${{inputs.is_build}}== 'true'
         runs-on: demo-lab # use lab for self-hosted runner
         steps:
             - name: Checkout
