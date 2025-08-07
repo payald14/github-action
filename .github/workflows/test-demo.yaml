@@ -4,8 +4,8 @@ on:
     workflow_dispatch:
 
 jobs:
-env:
-MY_ENV_VAR : ${{"PAYAL"}}
+    env:
+      MY_ENV_VAR : ${{"PAYAL"}}
     build:
         if: MY_ENV_VAR== 'DATE'
         runs-on: demo-lab # use lab for self-hosted runner
